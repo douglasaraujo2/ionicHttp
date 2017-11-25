@@ -14,5 +14,18 @@
 
 
 <ion-content padding>
-  {{email}}
+  <ion-card>
+  <img src={{pessoa.picture.large}}/>
+  <ion-card-content>
+    <ion-card-title>
+      {{pessoa.name.first}} {{pessoa.name.last}}
+      </ion-card-title>
+    <p>
+      {{pessoa.location.screet}}
+    </p>
+    <p>
+      {{pessoa.location.city}}
+    </p>
+  </ion-card-content>
+</ion-card>
 </ion-content>

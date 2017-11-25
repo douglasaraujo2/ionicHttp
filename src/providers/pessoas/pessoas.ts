@@ -29,4 +29,12 @@ export class PessoasProvider {
       });
     });
   }
+  loadByEmail(email: string): any{
+    for(let pessoa of this.pessoas){
+      if(pessoa.email == email){
+        return pessoa;
+      }
+
+    }
+  }
 }
